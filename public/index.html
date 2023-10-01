@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input{
+            padding: 0.5rem 0rem 0.5rem 0.5rem;
+            width: 50vw;
+            outline: none;
+          
+        }
+        .btn button{
+            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+            background-color: rgb(54, 54, 172);
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 2px;
+            transition: ease-in-out 0.5s all;
+
+        }
+        button:hover{
+            color: rgb(20, 68, 242);
+            background-color: white;
+        }
+        input::placeholder{
+             font-size: 1rem;
+             color: black;
+        }
+        h1{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortner</h1>
+        <form method="post" action="http://localhost:8000/url"> <!-- Updated action attribute -->
+            <input type="text" name="url" placeholder="Enter URL"> <!-- Added name attribute -->
+           <div class="btn"> <button>Submit</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>

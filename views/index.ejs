@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .container {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+
+        }
+
+        .short_id {
+            height: 30vh;
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: rgb(87, 87, 168);
+        }
+
+        h2 {
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Short ID</h2>
+    <div class="container short_id">
+        
+        <h3 class="short_id">
+            <%=shortID%>
+        </h3>
+    </div>
+
+
+    
+</body>
+
+</html>
